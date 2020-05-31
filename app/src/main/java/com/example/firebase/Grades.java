@@ -1,28 +1,27 @@
 package com.example.firebase;
 
-public class grades {
+public class Grades {
 
-    public String stugID, studname, quarter, subject, grade;
+    public String stugid, studname, quarter, subject, grade;
 
-    public grades (String stugID, String studname, String quarter, String subject, String grade){
+    public Grades(){}
+    public Grades (String stugID, String studname, String quarter, String subject, String grade){
 
-        this.stugID = stugID;
+        this.stugid = stugID;
         this.studname = studname;
         this.quarter = quarter;
         this.subject = subject;
         this.grade = grade;
     }
 
-    public grades(){
 
-    }
 
     public String getStugID() {
-        return stugID;
+        return stugid;
     }
 
     public void setStugID(String stugID) {
-        this.stugID = stugID;
+        this.stugid = stugID;
     }
 
     public String getStudname() {

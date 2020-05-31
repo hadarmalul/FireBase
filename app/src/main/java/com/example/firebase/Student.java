@@ -19,6 +19,40 @@ public class Student {
         this.studadp=studadp;
     }
 
+    public String getStuid() {
+        return stuid;
+    }
+
+    public void setStuid(String stuid) {
+        this.stuid = stuid;
+    }
+
+
+    public String getStuname() {
+        return stuname;
+    }
+
+    public void setStuname(String stuname) {
+        this.stuname = stuname;
+    }
+
+    public String getStuadd() {
+        return stuadd;
+    }
+
+    public void setStuadd(String stuadd) {
+        this.stuadd = stuadd;
+    }
+
+    public String getStupho() {
+        return stupho;
+    }
+
+    public void setStupho(String stupho) {
+        this.stuname = stuname;
+    }
+
+
     public String getStuhomep() {
         return stuhomep;
     }

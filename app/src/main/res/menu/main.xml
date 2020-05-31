@@ -4,4 +4,5 @@
     <item android:title="Grades" />
     <item android:title="Info" />
     <item android:title="Sort" />
+    <item android:title="Credits" />
 </menu>

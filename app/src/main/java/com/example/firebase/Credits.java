@@ -6,51 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.EditText;
-import static com.example.firebase.FBref.refGrades;
-import com.example.firebase.Grades;
 
-public class stugrades extends AppCompatActivity {
-
-    EditText etgID, etNAME, etQUAR, etGRADE, etSub;
-
+public class Credits extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stugrades);
-
-
-
-        etgID = (EditText) findViewById(R.id.etgID);
-        etNAME = (EditText) findViewById(R.id.etNAME);
-        etQUAR = (EditText) findViewById(R.id.etQUAR);
-        etGRADE = (EditText) findViewById(R.id.etGRADE);
-        etSub = (EditText) findViewById(R.id.etSub);
-
+        setContentView(R.layout.activity_credits);
     }
-
-    /**
-     * put in variables the edittext input
-     * @param view
-     */
-    public void entergrades(View view) {
-
-        String gID, name2, Quar, Grade, Sub;
-        gID = etgID.getText().toString();
-        name2 = etNAME.getText().toString();
-        Quar = etQUAR.getText().toString();
-        Grade = etGRADE.getText().toString();
-        Sub = etSub.getText().toString();
-
-        Grades grad = new Grades(gID, name2, Quar, Grade, Sub);
-        refGrades.child(gID).setValue(grad);
-
-
-    }
-
-
     /**
      * creates options menu that moves to other activities
      * @param menu

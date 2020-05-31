@@ -1,5 +1,10 @@
 package com.example.firebase;
 
+/**
+ * @author Hadar Malul
+ * @since 31.5.2020
+ */
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -37,6 +42,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void enterdata(View view) {
 
+        /**
+         * put in variables the edittext input
+         * @param view
+         */
+
         String name, address, mName, dName, stID, num, Hnum, Mnum, Dnum;
 
         stID = etsId.getText().toString();
@@ -52,6 +62,13 @@ public class MainActivity extends AppCompatActivity {
         Student stu = new Student(stID, name, address, num, Hnum, mName, Mnum, dName, Dnum);
         refStudent.child(stID).setValue(stu);
     }
+
+
+    /**
+     * creates options menu that moves to other activities
+     * @param menu
+     * @return
+     */
 
     public boolean onCreateOptionsMenu (Menu menu) {
 
@@ -77,7 +94,10 @@ public class MainActivity extends AppCompatActivity {
             Intent si = new Intent(this, SortActivity.class);
             startActivity(si);
         }
+        if (st.equals("Credits")){
+            Intent si = new Intent(this, Credits.class);
+            startActivity(si);
+        }
         return true;
     }
-
     }
